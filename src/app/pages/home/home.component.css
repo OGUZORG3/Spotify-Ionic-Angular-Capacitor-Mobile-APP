@@ -1,0 +1,32 @@
+.spotify__home-container{
+  height: 100vh;
+  margin-bottom: 100px;
+}
+.spotify__home-container_side-bar{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+}
+.spotify__home-container_playlist-container{
+  min-height: 100%;
+  background-color: #191919;
+  padding-bottom: 100px ;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.content{
+  margin: 95px 20px 20px 20px!important;
+  width: calc(100% - 40px);
+  overflow-x: hidden;
+}
+.responsive-sidebar{
+  position: fixed;
+  z-index: 3;
+  width: 70vw;
+  transform: translateX(-70vw);
+  transition: all 1000ms;
+}
+

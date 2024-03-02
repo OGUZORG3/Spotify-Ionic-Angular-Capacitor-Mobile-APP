@@ -1,0 +1,50 @@
+<div class=" background_image text-white ">
+  <div class="container-fluid text-center p-0 " >
+    <div class="login__container container w-50 rounded-4 m-5 ">
+      <div class=" d-flex justify-content-center align-content-center align-items-center flex-wrap flex-column">
+        <div class="text-center my-5">
+          <img src="../../../assets/Spotify_Logo_Dark.png" class="img-fluid text-center" width="320" alt="" >
+        </div>
+        <div class="w-50 auto__login__button">
+          <div class="my-3">
+            <div class="d-grid gap-3">
+              <button class="btn btn-primary rounded-pill" type="button"><i class="fa-brands fa-facebook me-2"></i>CONTİNUE WİTH FACEBOOK</button>
+              <button class="btn btn-dark rounded-pill" type="button"><i class="fa-brands fa-apple me-2"></i>CONTİNUE WİTH APPLE</button>
+              <button class="btn btn-outline-light rounded-pill" type="button"><i class="fa-brands fa-google me-2"></i>CONTİNUE WİTH GOOGLE</button>
+              <button class="btn btn-outline-light rounded-pill" type="button"><i class="fa-solid fa-phone me-2"></i>CONTİNUE WİTH PHONE NUMBER</button>
+            </div>
+          </div>
+        </div>
+        <hr class="style-eight mt-4 mb-2"/>
+        <div class="w-50 manual__login__button">
+          <form [formGroup]="userForm" (ngSubmit)="submit()"  >
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label float-start">Email address or User Name</label>
+              <input type="email" class="form-control p-3" formControlName="username" placeholder="Email address or User Name" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label float-start">Password</label>
+              <input type="password" placeholder="Password" formControlName="userpassword" class="form-control p-3" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check d-flex ps-0" style="justify-content: space-between; align-content: center;">
+              <label class="form-check-label float-start"  for="exampleCheck1">Forgot your password</label>
+            </div>
+            <div class="mb-3 form-check d-flex ps-0" style="justify-content: space-between; align-content: center;">
+              <div class="mt-2">
+                <input type="checkbox" class="form-check-input remember-me" formControlName="rememberMe" id="exampleCheck1" style="margin:5px 10px 0px 0px!important">
+                <label class="form-check-label float-start"  for="exampleCheck1">Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary login-btn float-end rounded-pill">LOG IN</button>
+            </div>
+          </form>
+        </div>
+        <hr class="style-eight mt-4 mb-2 "/>
+        <div class="w-50">
+          <div class="d-grid gap-1 mb-5">
+            <button class="btn btn-outline-light rounded-pill " type="button"><i class="fa-brands fa-spotify me-2"></i>SIGN UP FOR SPOTIFY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -24,3 +24,27 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import url(/node_modules/bootstrap/dist/css/bootstrap.min.css);
+/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0!important;
+
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+
+}
+::-webkit-scrollbar-track{
+  background: linear-gradient(
+  to bottom,
+  #333,
+  #333,
+  green);
+}
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 0.5px solid greenyellow;
+
+  border-radius: 50px;
+}

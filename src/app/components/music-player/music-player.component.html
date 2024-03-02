@@ -1,0 +1,48 @@
+<div class="music__player-container bg-dark d-flex justify-content-center" id="music__player-container">
+  <div class="w-50 text-white d-flex flex-column align-items-center text-center " style="margin-top: 70px!important; opacity: 1;">
+    <div class="mb-2">
+      <img class="rounded-3" width="300px" src="{{nowPlayingMusic.picture}}" alt="">
+      <h1>{{nowPlayingMusic.title}}</h1>
+      <p>{{nowPlayingMusic.muzikSanatci}}</p>
+    </div>
+    <div class="py-5 playingList text-decoration-none">
+        <ul class="px-0" style="margin-bottom: 100px;" >
+          <li  *ngFor="let item of soundList;let i=index" class="my-3 px-3 py-2 h-50" (click)="musicChange(i)"
+          [ngStyle]="{'background-color': item.id ===nowPlayingMusic.id ? 'gray' : 'transparent'}">{{item.title}}-{{item.muzikSanatci}}-{{i+1}}</li>
+        </ul>
+    </div>
+  </div>
+  <div class="bg-dark screenButton bg-dark rounded-top-5" id="screenButton">
+    <ion-fab-button color="transparent" box-shadow="none" class="btn btn-sm btn-outline-light rounded-circle mt-2 mx-1"  (click)="musicScreenControll()"><i class="fa-solid fa-arrow-up"></i></ion-fab-button>
+  </div>
+</div>
+<div class="music__player bg-dark">
+  <div>
+  <audio src="{{nowPlayingMusic.soundPath}}" id="audio"></audio>
+  <input type="range" [(ngModel)]="rangeValue" (input)="setTime()" name="" step="1" id="musicRange" max="100" min="0">
+  </div>
+  <div class="d-flex music__player-buttons justify-content-center align-items-center h-100">
+    <div class="w-25 text-center text-white">
+      <div class="sound rounded-circle">
+        <i class="fa-solid fa-volume-high "><input [(ngModel)]="voiceLevel" (input)="setVoice()" type="range" max="100" min="0"></i>
+      </div>
+    </div>
+    <div class=" d-flex justify-content-evenly align-items-center w-50 ">
+      <ion-fab-button shape="round"  (click)="backward()" [disabled]="backWardButton ? false : true"><i class="fa-solid fa-backward-step"></i></ion-fab-button>
+      <ion-fab-button shape="round"  (click)="playPause()" [disabled]="playButton"><i id="playPause" [ngClass]="{'fa-play': !isPlaying,'fa-pause': isPlaying}" class="fa-solid fa-pause fa-play"></i></ion-fab-button>
+      <ion-fab-button shape="round"  (click)="forward()" [disabled]="forWardButton ? false : true"><i class="fa-solid fa-forward-step"></i></ion-fab-button>
+    </div>
+    <div class="w-25 row text-white">
+      <div class="col-4 btn_autoPlay">
+        <input type="checkbox" [(ngModel)]="autoPlay" class="btn-check" id="btncheck1" autocomplete="off">
+        <label class="btn btn-outline-primary rounded-circle" for="btncheck1"><i class="fa-solid fa-rotate-left"></i></label>
+      </div>
+      <div class="col-4">
+
+      </div>
+      <div class="col-4">
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div *ngFor="let item of playListData">
+  <div class="p-2 bg-dark my-3">
+    <h2 class="m-3">{{item.playListName}}</h2>
+    <app-music-list [musicList]="item.playListContent"></app-music-list>
+  </div>
+</div>

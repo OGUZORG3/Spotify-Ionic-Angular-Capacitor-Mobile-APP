@@ -1,0 +1,18 @@
+<div class="ms-lg-2 ms-4">
+  <div class="spotify__home-container_side-bar-item my-5 mx-auto">
+    <img width="200px"  class="img-fluid" src="../../../assets/spotify_logo.png" alt="spotifyLightLogo">
+  </div>
+  <div class="spotify__home-container_side-bar-item my-2" [routerLink]="['./home-content']" routerLinkActive="linkActive" >
+    <a>Home</a>
+  </div>
+  <div class="spotify__home-container_side-bar-item my-2"  [routerLink]="['./search']" routerLinkActive="linkActive" >
+    <a>Search</a>
+  </div>
+  <div class="spotify__home-container_side-bar-item my-2" [routerLink]="['./playlist']" routerLinkActive="linkActive" >
+    <a>Playlist</a>
+  </div>
+  <div class="spotify__home-container_side-bar-item my-2" [routerLink]="['./settings']" routerLinkActive="linkActive" >
+    <a>Settings</a>
+  </div>
+</div>
+<!-- (click)="onNavigateToSearch()" -->

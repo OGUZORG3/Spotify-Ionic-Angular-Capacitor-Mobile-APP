@@ -1,0 +1,148 @@
+.playingList>ul>li{
+  list-style-type:none;
+  display: block;
+  border: white 1px solid;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.playingList>ul>li:hover{
+  background-color: rgba(255, 255, 255, 0.403)!important;
+}
+.playingList > ul{
+  margin-bottom: 100px!important;
+  width: 75vw;
+
+}
+.playingList{
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.playingList::-webkit-scrollbar{
+  overflow-y: scroll;
+  display: none;
+}
+.music__player-container{
+  z-index: 9;
+  opacity: 0.8;
+  top: 100vh;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: all 1000ms;
+}
+.screenButton{
+  height: 50px;
+  position: absolute;
+  top: -140px;
+  right: 50px;
+  transition: all 1000ms;
+}
+.music__player{
+  z-index: 10;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 100px;
+  box-shadow: -20px 0px 100px green;
+}
+.music__player input#musicRange{
+  position: absolute;
+  width: 100vw;
+  -webkit-appearance: none; /* Safari ve Chrome'da default görünümü kaldırır */
+  appearance: none; /* Diğer tarayıcılarda default görünümü kaldırır */
+}
+.music__player input::-webkit-slider-runnable-track{
+  width: 100%; /* Track (arka plan) uzunluğunu belirler */
+  height: 8px; /* Track yüksekliğini belirler */
+  background: linear-gradient(
+    to right,
+    #333,
+    green); /* Track rengini belirler */
+}
+.music__player input::-webkit-slider-thumb{
+  transition: all 10000ms;
+  position: relative;
+  top: -2px;
+  -webkit-appearance: none; /* Safari ve Chrome'da default görünümü kaldırır */
+  appearance: none; /* Diğer tarayıcılarda default görünümü kaldırır */
+  width: 12px; /* Thumb (kaydırıcı) genişliğini belirler */
+  height: 12px; /* Thumb yüksekliğini belirler */
+  background: transparent; /* Thumb rengini belirler */
+  border: greenyellow 2px solid;
+  box-shadow: 0px 0px 20px 5px greenyellow;
+  border-radius: 50%; /* Thumb'in yuvarlaklığını belirler */
+  cursor: pointer; /* Mouse üzerine gelince imleci değiştirir */
+}
+.music__player-buttons ion-fab-button{
+  --background: #333;
+  --border: 2px solid green !important;
+  --color: greenyellow!important;
+  --box-shadow: 0px 0px 10px white!important;
+  --transition: all 500ms!important;
+  --background-hover: darkgreen;
+}
+
+.music__player-buttons ion-fab-button:hover{
+  --background-color: darkgreen;
+  --border: 2px solid #333;
+  --color: white;
+  --box-shadow: 0px 0px 20px white;
+  --background-hover: darkgreen;
+}
+.music__player-buttons ion-fab-button:active{
+  --background-color: greenyellow;
+  --border: 2px solid #333;
+  --color: #333;
+  --box-shadow: 0px 0px 20px white;
+}
+.col-4 > label{
+  background-color: #333;
+  border: 2px solid green;
+  color: greenyellow;
+  box-shadow: 0px 0px 10px white;
+  transition: all 500ms;
+}
+#btncheck1:checked + label{
+  background-color: darkgreen!important;
+  border: 2px solid #333!important;
+  color: white!important;
+  box-shadow: 0px 0px 20px white!important;
+}
+.sound{
+  z-index: 4;
+  padding-top: 11px;
+  padding-right: 18px;
+  background-color: green;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border: 3px solid greenyellow;
+}
+.sound > i > input[type="range"]{
+  display: none;
+  position: absolute;
+  z-index: 0;
+  background: transparent;
+  appearance: none;
+  transform: rotate(270deg) translate(50%,-75px);
+}
+.sound > i > input[type="range"]::-webkit-slider-runnable-track{
+  border-radius:35px ;
+  height: 10px;
+  border: 2px solid #333;
+}
+.sound > i > input[type="range"]::-webkit-slider-thumb{
+  top: -3px;
+}
+.sound > i {
+  color: greenyellow;
+  position: absolute;
+  float: left;
+}
+.sound:hover > i > input[type="range"]{
+  display: initial;
+}
+
+

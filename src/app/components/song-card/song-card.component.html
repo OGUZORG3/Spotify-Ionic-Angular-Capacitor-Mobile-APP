@@ -1,0 +1,9 @@
+<div class="spotify__song-card mx-3 my-3" style="overflow: hidden;" (click)="sendMusicData()">
+  <div class="card h-100 border-0 bg-dark">
+    <img class="card-img-top" [src]="musicObject.picture"   alt="Title" />
+    <div class="card-body text-white text-center">
+      <h5 class="card-title">{{musicObject.title}}</h5>
+      <p class="card-text">{{musicObject.muzikSanatci}}</p>
+    </div>
+  </div>
+</div>

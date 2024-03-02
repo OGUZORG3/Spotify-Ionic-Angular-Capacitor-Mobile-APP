@@ -1,0 +1,7 @@
+<input (input)="onSearch()" [(ngModel)]="keyword"  type="text" class="form-control">
+<div class="row ">
+  <div class="col-sm-6 col-md-3 col-12 d-flex justify-content-center" *ngFor="let item of filteredMusicList" >
+    <app-song-card-mobile [musicObject]="item"></app-song-card-mobile>
+  </div>
+</div>
+

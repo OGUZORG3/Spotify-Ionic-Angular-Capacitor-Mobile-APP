@@ -1,0 +1,12 @@
+.spotify__song-card{
+  cursor: pointer;
+  height: 300px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: centers;
+  background-color: #0f0f0f;
+  border-radius: 15px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0,0.24);
+}

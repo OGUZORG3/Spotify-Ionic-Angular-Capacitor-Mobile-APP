@@ -1,0 +1,12 @@
+<div class="spotify__top-nav col-lg-10 col-12 d-flex text-white justify-content-between align-items-center">
+  <div class="mx-3 d-block d-lg-none">
+    <button class="btn btn-lg btn-outline-light" (click)="sideBarController()"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div class="d-flex ms-4">
+  <input *ngIf="isSearchFiledVisible" type="text" class="rounded-pill py-2 px-4 search_playlist" placeholder="Search">
+  </div>
+  <div class="spotify__top-nav_auth d-flex">
+    <div class="spotify__top-nav_auth_sign-up mx-3"><a class=" d-none btn btn-lg btn-outline-light rounded-pill fw-light nav-btn" [routerLink]="['/signup']" routerLinkActive="router-link-active" >Sign in</a></div>
+    <div class="spotify__top-nav_auth_login me-4" ><a class="d-none btn btn-lg btn-light font rounded-pill fw-light nav-btn" routerLink="/login">Log in</a></div>
+  </div>
+</div>

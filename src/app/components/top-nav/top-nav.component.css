@@ -1,0 +1,26 @@
+.spotify__top-nav{
+  height: 75px;
+
+  z-index: 2;
+  background-color: #0f0f0f;
+  position: fixed;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0,0.24);
+}
+.nav-btn{
+  font-size: medium;
+  padding: 12px 22px 12px 22px;
+}
+.spotify__top-nav_auth_login > a:hover{
+  background-color: #0f0f0f!important;
+  color: greenyellow;
+  border-color: greenyellow;
+}
+.search_playlist{
+  width: 25vw;
+  font-weight:700;
+  border: 0;
+}
+.search_playlist:focus-visible{
+  outline: 0;
+  box-shadow: 0px 0px 10px white;
+}

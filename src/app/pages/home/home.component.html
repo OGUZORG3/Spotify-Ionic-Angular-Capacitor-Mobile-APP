@@ -1,0 +1,25 @@
+<div class=" h-100 bg-dark responsive-sidebar" id="responsive-sidebar">
+  <div class="text-end m-3">
+  <button class="btn btn-lg btn-outline-light" (click)="sideBarControl(false)"><i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div>
+    <app-sidebar></app-sidebar>
+  </div>
+</div>
+<div class="spotify__home-container row" >
+  <div class="spotify__home-container_side-bar col-2 float-right d-lg-block d-none">
+    <div class="" style="position: fixed;">
+      <app-sidebar></app-sidebar>
+    </div>
+  </div>
+  <div class="spotify__home-container_playlist-container col-lg-10 col-sm-12 px-0">
+    <app-top-nav (sidebarVisible)="sideBarControl($event)"></app-top-nav>
+    <div class="content rounded-2 text-white">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="col-12 px-0 ">
+
+    <app-music-player></app-music-player>
+  </div>
+</div>

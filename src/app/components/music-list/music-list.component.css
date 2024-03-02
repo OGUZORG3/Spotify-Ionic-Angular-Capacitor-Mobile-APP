@@ -1,0 +1,8 @@
+.playlist-scroll::-webkit-scrollbar{
+  display: none;
+
+}
+.playlist-scroll{
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}

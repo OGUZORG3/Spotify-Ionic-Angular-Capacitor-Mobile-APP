@@ -1,0 +1,10 @@
+<div class="mx-4 my-3">
+  <button class="btn btn-outline-light mx-4 rounded-pill" (click)="scrolBackClick($event)"><</button>
+  <button class="btn btn-outline-light rounded-pill" (click)="scrolFrontClick($event)">></button>
+</div>
+<div class="container playlist-scroll mx-2 d-flex"  id="scroll" >
+  <div class="" *ngFor="let item of musicList">
+    <app-song-card  [musicObject]="item"></app-song-card>
+  </div>
+</div>
+
