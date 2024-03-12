@@ -53,10 +53,6 @@ ionic serve
 - Dalınıza itin (`git push origin özellik/yenilik`)
 - Bir Pull Talebi açın
 
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [LİSANS](LICENSE) dosyasına başvurun.
-
 ---
 
 Bu README dosyası, projenin özeti, kurulum talimatları, katkıda bulunma rehberi ve lisans bilgilerini içermektedir. Dilerseniz bu temel yapıyı değiştirerek veya ekleyerek projenizin gereksinimlerine uygun hale getirebilirsiniz.
