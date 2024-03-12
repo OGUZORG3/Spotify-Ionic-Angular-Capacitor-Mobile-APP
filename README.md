@@ -54,5 +54,3 @@ ionic serve
 - Bir Pull Talebi açın
 
 ---
-
-Bu README dosyası, projenin özeti, kurulum talimatları, katkıda bulunma rehberi ve lisans bilgilerini içermektedir. Dilerseniz bu temel yapıyı değiştirerek veya ekleyerek projenizin gereksinimlerine uygun hale getirebilirsiniz.
